@@ -1,0 +1,4 @@
+RewriteEngine Off
+
+RewriteBase /form
+RewriteBase /form/mail.php

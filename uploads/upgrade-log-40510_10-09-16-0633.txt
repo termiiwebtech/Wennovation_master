@@ -1,0 +1,5 @@
+INFO Starting to process files in forced mode...
+SUCCESS File successfully written: front/actions.php
+SUCCESS File successfully written: ./index.php
+SUCCESS File successfully written: install/classes/ia.patch.parser.php
+SUCCESS File successfully written: install/modules/module.install.php

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin name="norightclick">
+	<title>No Right Click</title>
+	<summary>This plugin disables right click on your website pages.</summary>
+	<author>Intelliants LLC</author>
+	<contributor>Intelliants LLC</contributor>
+	<version>3.1.0</version>
+	<date>2014-05-13</date>
+	<status>active</status>
+	<compatibility>3.0</compatibility>
+
+	<phrases>
+		<phrase key="right_click_disabled" category="frontend">Content is copyrighted. You are not allowed to copy it.</phrase>
+	</phrases>
+
+	<hooks>
+		<hook name="smartyFrontAfterHeadSection" type="smarty" page_type="front">
+			<![CDATA[
+{ia_add_js}
+$(function()
+{
+	document.addEventListener("contextmenu", function(e)
+	{
+		e.preventDefault();
+
+		intelli.notifFloatBox({
+			msg: _t('right_click_disabled'),
+			type: 'error',
+			autohide: true}
+		);
+	}, false);
+});
+{/ia_add_js}
+			]]>
+		</hook>
+	</hooks>
+</plugin>

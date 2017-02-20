@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin name="kcaptcha">
+	<title>KCaptcha</title>
+	<summary>Plugin adds the CAPTCHA to all pages where it is needed to prevents automatic bot form submission</summary>
+	<author>Intelliants LLC</author>
+	<contributor>Intelliants LLC</contributor>
+	<version>4.0.1</version>
+	<date>2015-11-11</date>
+	<category>captchas</category>
+	<compatibility>4.0</compatibility>
+
+	<config group="miscellaneous" name="kcaptcha_divider" type="divider" description="KCAPTCHA">KCAPTCHA</config>
+	<config group="miscellaneous" name="captcha_case_sensitive" type="radio" values="1,0" description="Case sensitive">1</config>
+	<config group="miscellaneous" name="captcha_num_chars" type="text" description="Number of characters">5</config>
+
+	<phrases>
+		<phrase key="click_to_redraw" category="frontend">Click here to redraw</phrase>
+		<phrase key="captcha_annotation" category="frontend">Please input letters you see on the image.&lt;br /&gt;Click on image to redraw.</phrase>
+	</phrases>
+</plugin>

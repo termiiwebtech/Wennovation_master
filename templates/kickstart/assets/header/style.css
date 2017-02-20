@@ -1,0 +1,101 @@
+/*DEMO PAGE STYLES */
+
+body{
+	font-family: "Open Sans",sans-serif;
+}
+.header-demo{
+	overflow:hidden;
+}
+
+.header-demo  .demo-header1{
+	overflow: inherit;
+}
+.demo-header1{
+	z-index: 10;
+}
+.demo-header-2{
+	z-index: 9;
+}
+.demo-header-3{
+	z-index: 8;
+}
+.demo-header-4{
+	z-index: 7;
+}
+.demo-header-5{
+	z-index: 6;
+}
+.demo-header-6{
+	z-index: 5;
+}
+.demo-header-7{
+	z-index: 4;
+}
+
+.demo-body {
+	position: relative;
+	min-height: 95px;
+	border-bottom: 0;
+	background-size: cover;
+}
+.demo-body-2h {
+	min-height: 145px;
+}
+
+.demo-body-3h {
+	min-height: 165px;
+}
+.header-background-color{
+	background: #2d83b4;
+}
+.nav.yamm > li > a:focus,
+.nav.yamm > li > a:hover{
+	background-color: transparent;
+}
+.demo-header-4 .nav.yamm > li > a:focus,
+.demo-header-4 .nav.yamm > li > a:hover{
+	text-decoration: underline;
+}
+
+.demo-body .navbar-fixed-bottom, .navbar-fixed-top {
+	position: absolute;
+}
+.demo-body .header-section {
+	padding: 180px 0 20px;
+}
+
+.demo-header-1 {
+	overflow: inherit !important;
+}
+.wrap-inside-nav {
+	visibility: hidden;
+}
+.demo-header-1 .wrap-inside-nav {
+	visibility: visible;
+}
+
+
+@media (max-width:1000px) {
+
+	.header-demo {
+		overflow: auto;
+	}
+
+	.demo-body {
+		min-height: 85px;
+	}
+
+
+	.demo-body-2h {
+		min-height: 180px !important;
+	}
+
+	.demo-body-3h {
+		min-height: 210px !important;
+	}
+
+	.demo-header-4.demo-body-2h{
+		min-height: 85px !important; 
+	}
+
+}

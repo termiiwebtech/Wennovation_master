@@ -1,0 +1,40 @@
+Options -MultiViews
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_URI} !(.*)\.(.*)$
+	RewriteRule ^(.+[^/])$ http://%{HTTP_HOST}%{REQUEST_URI}/ [L,R=301]
+
+	# Google sitemap controller
+	RewriteRule ^(tmp/)?sitemap.xml$ tmp/sitemap.xml [L]
+
+	RewriteCond %{REQUEST_FILENAME} -f
+	RewriteRule ^(.*)(\.php([0-9]*)|\.json|\.xml|\.tpl|\.phtml|\.ini|\.inc|/)$ index.php?_p=$1 [NC,QSA,L]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.*)$ index.php?_p=$1 [QSA,L]
+</IfModule>
+
+<IfModule mod_deflate.c>
+	<IfModule mod_setenvif.c>
+		<IfModule mod_headers.c>
+			SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+			RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+		</IfModule>
+	</IfModule>
+
+	<IfModule mod_filter.c>
+		AddOutputFilterByType DEFLATE \
+			text/html text/plain text/xml text/css text/javascript text/xml \
+			application/xml application/xhtml+xml application/rss+xml \
+			application/javascript application/x-javascript application/json \
+			font/opentype application/x-font-ttf font/eot \
+			image/x-icon image/vnd.microsoft.icon image/svg+xml image/svg+xml
+	</IfModule>
+
+	<IfModule mod_mime.c>
+		AddEncoding gzip svgz
+	</IfModule>
+</IfModule>

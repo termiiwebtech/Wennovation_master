@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin name="piwik">
+	<title>Piwik Analytics</title>
+	<summary>Allows to insert Piwik Analytics code</summary>
+	<author>Intelliants LLC</author>
+	<contributor>Intelliants LLC</contributor>
+	<version>4.0.0</version>
+	<date>2016-06-30</date>
+	<compatibility>4.0</compatibility>
+
+	<configgroup name="piwik_analytics">Piwik Analytics</configgroup>
+
+	<config group="piwik_analytics" type="divider" name="piwik_plugin">Piwik Plugin</config>
+	<config group="piwik_analytics" type="textarea" name="piwik_analytics" description="Piwik Analytics Code"><![CDATA[]]></config>
+
+	<hooks>
+		<hook name="smartyFrontAfterHeadSection" type="smarty" page_types="front">
+			<![CDATA[
+{$core.config.piwik_analytics}
+			]]>
+		</hook>
+	</hooks>
+</plugin>

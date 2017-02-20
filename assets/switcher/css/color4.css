@@ -1,0 +1,312 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+ - Default colors
+
+- Project:	Moresa - Multipurpose HTML Template
+- Version:	1.1
+- Author:  Andrey Sokoltsov
+- Profile:	http://themeforest.net/user/andreysokoltsov
+
+-------------------------------------------------------------------*/
+.customBgColor,
+.customPseudoElBg:before,
+.customPseudoElBg:after,
+.fixed-menu .header {
+    background-color: #2d83b4;
+}
+
+.navbar-main > li > a:focus,
+.navbar-main > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover,
+.customColor {
+    color: #2d83b4;
+}
+
+.custom-filter {
+    background-color: rgba(45, 131, 180, 0.9);
+}
+
+.logo span {
+    color: #2d83b4;
+}
+
+/*highlight*/
+.highlight-primary {
+    background: #2d83b4;
+    color: #fff;
+}
+
+.highlight-secondary {
+    background: #222222;
+    color: #fff;
+}
+
+.highlight-dotted {
+    background: #fff;
+    outline: 1px dotted #878787;
+}
+
+.highlight-primary-nobg {
+    color: #2d83b4;
+    background: transparent;
+}
+
+.highlight-secondary-nobg {
+    color: #222222;
+    background: transparent;
+}
+
+.highlight-gray-nobg {
+    color: #bbbbbb;
+    background: transparent;
+}
+
+/* tooltips */
+.color-tooltip {
+    color: #2d83b4;
+}
+
+.color-tooltip + .tooltip > .tooltip-inner {
+    background: #2d83b4;
+}
+
+.color-tooltip + .tooltip > .tooltip-arrow {
+    border-top-color: #2d83b4;
+}
+
+/*list styles*/
+.b-list.check-circle-o li:before {
+    color: #2d83b4;
+}
+
+.b-list.l-checked .l-not-check:before {
+    color: #2d83b4;
+}
+
+.b-list.l-checked-square .l-check-square:before {
+    color: #2d83b4;
+}
+.b-list.l-checked-square .l-not-check-square:before {
+    color: #2d83b4;
+}
+
+.b-list.l-plane li:before {
+    color: #2d83b4;
+}
+
+.b-list.l-circle li:before {
+    font-family: FontAwesome;
+    content: "\f111";
+    display: inline-block;
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    font-size: 12px;
+    color: #2d83b4;
+}
+
+/*Dropcap styles*/
+.b-round-dropcap .round-dropcap {
+    background: #2d83b4;
+}
+
+.b-square-dropcap .square-dropcap {
+    background: #2d83b4;
+}
+
+.b-square-dropcap-mod .square-dropcap {
+    color: #2d83b4;
+    border-color: #2d83b4;
+}
+
+/*Blockquote Style*/
+.b-blockquote-left-border:before {
+    background: #2d83b4;
+}
+
+.b-blockquote-bg {
+    background-color: #2d83b4;
+}
+
+/* buttons */
+.btn-primary {
+    background: #2d83b4;
+    border-color: #2d83b4;
+}
+.btn-primary:hover {
+    border-color: #2d83b4;
+}
+
+.btn-default {
+    color: #2d83b4;
+}
+.btn-default:hover {
+    background: #2d83b4;
+    border-color: #2d83b4;
+}
+
+.btn-primary-arrow {
+    background: #2d83b4;
+    border-color: #2d83b4;
+}
+.btn-primary-arrow:hover {
+    border-color: #2d83b4;
+    background: none;
+}
+
+.btn-default-arrow {
+    color: #2d83b4;
+}
+.btn-default-arrow:hover {
+    background: #2d83b4;
+    border-color: #2d83b4;
+}
+
+.btn-reply {
+    color: #2d83b4;
+}
+
+/* pagination */
+.pag-btn:hover {
+    color: #2d83b4;
+}
+
+.pag-prev:after,
+.pag-next:after {
+    background-color: #2d83b4;
+}
+
+/* forms */
+.b-form .form-control:focus {
+    border-color: #2d83b4;
+}
+
+/*checkbox/radio*/
+.checkbox-1 input[type=checkbox]:checked + label:before {
+    background: #2d83b4;
+}
+
+.radio1 label:before {
+    background: #2d83b4;
+}
+
+.radio3 label:after {
+    background-color: #2d83b4;
+}
+
+/* progress bar */
+.progress.progress-color2 .progress-bar {
+    background: #2d83b4;
+}
+
+.progress-mod.progress-color2 {
+    border: 2px solid #2d83b4;
+}
+.progress-mod.progress-color2 .progress-bar {
+    background: #2d83b4;
+}
+
+/* tables */
+.table.table-striped thead tr td {
+    border-color: #2d83b4;
+}
+
+/* pricing plans */
+.b-plan-item .plan-title:before,
+.b-plan-item-odd .plan-title:before {
+    background: #2d83b4;
+}
+.b-plan-item .plan-price,
+.b-plan-item-odd .plan-price {
+    color: #2d83b4;
+}
+
+/*Accordion*/
+.b-accordion .ui-accordion-header.ui-state-active {
+    background: #2d83b4;
+    border-color: transparent;
+}
+
+/* footer */
+.b-footer-socials .socials-title {
+    color: #2d83b4;
+}
+.b-footer-socials .socials-title:before {
+    background: #2d83b4;
+}
+
+/* contacts */
+.b-contact-info .contact-info-title span,
+.b-work-info .contact-info-title span {
+    color: #2d83b4;
+}
+
+/* works */
+.b-items-sort li.active-filt {
+    color: #2d83b4;
+}
+.b-items-sort li.active-filt:before {
+    background: #2d83b4;
+}
+
+/* work details */
+.b-work-info a:hover {
+    color: #2d83b4;
+}
+
+/* blog post */
+.b-post-tags a:hover {
+    color: #2d83b4;
+}
+
+/* tabs */
+.b-tabs .nav-tabs > li.active > a,
+.b-tabs .nav-tabs > li.active > a:focus,
+.b-tabs .nav-tabs > li.active > a:hover {
+    color: #2d83b4;
+}
+.b-tabs .tab-custom .b-tab-additional a.active::before {
+    background: rgba(45, 131, 180, 0.9);
+}
+
+/* about */
+.facts-icon i {
+    color: #2d83b4;
+}
+
+.b-member-info .member-socials a:hover {
+    color: #2d83b4;
+}
+
+.b-member-list .member-list-item a.active .member-img::before {
+    background: rgba(45, 131, 180, 0.9);
+}
+
+/* bxslider custom controls */
+.bx-outside-controls span {
+    border-color: #2d83b4;
+}
+
+/* home */
+.secondary-home-news .b-blog-item:hover:before {
+    background: rgba(45, 131, 180, 0.9);
+}
+
+.section-home-secondary .primary-home-news a {
+    display: block;
+}
+.section-home-secondary .primary-home-news a:hover {
+    text-decoration: none;
+}
+.section-home-secondary .primary-home-news a:hover .caption-title {
+    color: #2d83b4;
+}
+
+.b-video-holder a {
+    color: #2d83b4;
+}
+.header-background-color {
+	background: #2d83b4;
+}

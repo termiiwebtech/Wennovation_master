@@ -1,0 +1,11 @@
+.gmap-renderer {
+	min-height: 300px;
+}
+
+.gmap-infowindow {
+	max-width: 160px;
+}
+
+.gmap-infowindow span {
+	display: block;
+}
